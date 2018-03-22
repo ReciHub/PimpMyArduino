@@ -2,6 +2,8 @@
 
 Criando Arduinos Sob Medidas - Um livro Open Source
 
+*Versão em MarkDown para permitir contribuições da comunidade ao Livro, para uma melhor visualização em leitura, recomendamos a [versão publicada em PDF](https://github.com/ReciHub/PimpMyArduino/blob/master/PimpMyArduino.pdf)*
+
 <img src="https://i.imgur.com/p0PnWoR.png" height="818" width="626">
 
 ## Sumário
