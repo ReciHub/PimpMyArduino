@@ -2,7 +2,7 @@
 
 Criando Arduinos Sob Medidas - Um livro Open Source
 
-![](https://i.imgur.com/p0PnWoR.png)
+<img src="https://i.imgur.com/p0PnWoR.png" height="818" width="626">
 
 ## Sumário
 ### 1. Prefácio
@@ -50,8 +50,27 @@ Primeiramente, devemos observar e entender algumas das especificações dela. Ob
 
 Tabela 1 - Especificações do Arduino UNO
 
+---
 <p align="justify">Se você já possui conhecimento sobre todas essas informações e sabe o que elas significam, sinta-se livre para ir para o próximo capítulo, caso contrário, iremos analisar esses dados.</p>
 
-![](https://i.imgur.com/tnJnOTD.png)
+<img src="https://i.imgur.com/tnJnOTD.png" height="400" width="400">
 
 Figura 1 - Arduino UNO
+
+---
+<p align="justify"><b>1.</b> Primeiramente, o <b>Microcontrolador</b>, isso é, o chip que controla o Arduino, é nele onde são realizadas toda a matemática, onde o código é armazenado e onde as instruções são realizadas, ou seja, ele é o “cérebro” da placa. No caso da UNO, o microcontrolador utilizado é o Atmega328P, desenvolvido pela Atmel.</p>
+
+<img src="https://i.imgur.com/Ef6JAzF.png" height="267" width="400">
+
+Figura 2 - ATMega328P
+
+---
+
+<p align="justify"><b>2.</b> A <b>Tensão de Operação</b> não apenas é a tensão necessária para o funcionamento da placa, mas também é a utilizada nos pinos I/O (Entrada e Saída). Portanto em todas as saídas e entradas digitais da placa, deverá “entrar” ou “sair” 5 volts.</p>
+
+<p align="justify"><b>3.</b> Tanto a <b>Tensão de Entrada (Recomendada)</b> quanto a <b>Tensão de Entrada (Limite)</b> representam a tensão necessária na alimentação do dispositivo para o seu funcionamento. Esses valores decorrem do Regulador de Tensão da placa, sendo ele o componente que converte uma tensão mais elevada para uma tensão de referência fixa, nesse caso os 5V de Tensão de Operação. Portanto, o Regulador de Tensão do dispositivo (NCP1117) necessita no mínimo uma tensão de entrada de 6V para que na sua saída se tenha 5V. Além disso, só é permitido ter na sua entrada a tensão máxima de 20V, devido à potência máxima do componente, sendo essas as tensões limites (6V - 20V). Porém, para que a vida útil da placa seja a melhor possível, é recomendado a aplicação de uma tensão entre  7V e  12V.</p>
+
+<p align="justify"><b>4.</b> <b>Os Pinos I/O</b>, também chamados de portas digitais, são as entradas e saídas digitais da placa. Através do código, é possível configurar cada uma como entrada ou saída de tensão (In ou Out). Se for configurada como saída, pode-se programá-la para o estado ligado (HIGH ou 1), onde a tensão na porta é de 5V, ou para o estado desligado (LOW ou 0), onde a tensão na porta é de 0V. Caso esteja configurado como entrada, é possível ler o estado da tensão aplicada sobre ela de maneira binária, ou seja, se está com 5V (1) ou com 0v (0). No caso da Arduino UNO, são 14 portas digitais para serem usufruídas.</p>
+
+<p align="justify"><b>5.</b> Alguns dos Pinos I/O podem também ser configurados para emitirem sinais <b>PWM</b> (Modulação de Largura de Pulso). Esses sinais são utilizados muitas vezes para simular variações de tensões através do chaveamento entre os estados 1 e 0. Uma das aplicações por exemplo é para variar a velocidade de um motor de corrente continua controlado por um Arduino. Seis das 14 portas digitais do Arduino UNO podem ser utilizadas como emissoras de sinais PWM, sendo elas identificadas com um traço em cima do número do pino.</p>
+
